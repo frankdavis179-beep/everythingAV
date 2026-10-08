@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a0a0c" />
+    <meta name="description" content="Get in touch with EverythingAV about electrical, Savant home control, AV, networking or security for your home." />
+    <title>Get in touch — EverythingAV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="header-inner shell">
+        <a class="brand" href="index.html#top" aria-label="EverythingAV home">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="brand-type"><strong>EVERYTHING<span>AV</span></strong><small>ELECTRICAL&nbsp; · &nbsp;AV&nbsp; · &nbsp;AUTOMATION</small></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+          <a href="index.html#services">Services</a>
+          <a href="index.html#approach">Our approach</a>
+          <a href="index.html#systems">Systems</a>
+          <a class="nav-contact" href="#contact" aria-current="page">Get in touch <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="contact-section contact-page-section section-pad" id="contact" aria-labelledby="contact-title">
+        <div class="shell contact-layout">
+          <div class="contact-copy contact-page-copy">
+            <a class="contact-back" href="index.html#services"><span aria-hidden="true">←</span> Back to services</a>
+            <p class="eyebrow"><span class="eyebrow-line"></span> YOUR HOME, THOUGHT THROUGH</p>
+            <h1 class="contact-page-title" id="contact-title">Let's make it <em>work beautifully.</em></h1>
+            <p>Whether you're planning a renovation or refining a home you already love, tell us a little about it.</p>
+            <div class="contact-aside"><span>Electrical · AV · Automation<br /><b>London &amp; surrounding areas</b></span></div>
+          </div>
+          <form class="enquiry-form" id="enquiry-form">
+            <div class="form-row">
+              <label>Your name<input name="name" autocomplete="name" placeholder="Name" maxlength="120" required /></label>
+              <label>Email address<input name="email" type="email" autocomplete="email" placeholder="you@example.com" maxlength="254" required /></label>
+            </div>
+            <fieldset class="service-options" aria-describedby="service-hint">
+              <legend>What are you looking for?</legend>
+              <p class="field-hint" id="service-hint">Tick all that apply</p>
+              <div class="checkbox-grid">
+                <label class="service-option"><input type="checkbox" name="service" value="Electrical" /><span class="checkbox-mark" aria-hidden="true"></span><span>Electrical</span></label>
+                <label class="service-option"><input type="checkbox" name="service" value="Savant home control" /><span class="checkbox-mark" aria-hidden="true"></span><span>Savant home control</span></label>
+                <label class="service-option"><input type="checkbox" name="service" value="Lutron lighting control" /><span class="checkbox-mark" aria-hidden="true"></span><span>Lutron lighting control</span></label>
+                <label class="service-option"><input type="checkbox" name="service" value="Audio visual" /><span class="checkbox-mark" aria-hidden="true"></span><span>Audio visual</span></label>
+                <label class="service-option"><input type="checkbox" name="service" value="TV and entertainment" /><span class="checkbox-mark" aria-hidden="true"></span><span>TV &amp; entertainment</span></label>
+                <label class="service-option"><input type="checkbox" name="service" value="Networking" /><span class="checkbox-mark" aria-hidden="true"></span><span>Networking</span></label>
+                <label class="service-option"><input type="checkbox" name="service" value="Security" /><span class="checkbox-mark" aria-hidden="true"></span><span>Security</span></label>
+              </div>
+            </fieldset>
+            <label>A little about your project<textarea name="message" rows="4" maxlength="4000" placeholder="A few details about your home or plans…" required></textarea></label>
+            <div class="form-honeypot" aria-hidden="true">
+              <label>Leave this field empty<input name="website" tabindex="-1" autocomplete="off" /></label>
+            </div>
+            <button class="button button-primary form-submit" type="submit">Send enquiry <span aria-hidden="true">↗</span></button>
+            <p class="form-note" id="form-note" role="status">Your enquiry will be sent directly to the EverythingAV inbox.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-main">
+        <a class="brand footer-brand" href="index.html#top" aria-label="EverythingAV home">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="brand-type"><strong>EVERYTHING<span>AV</span></strong><small>ELECTRICAL&nbsp; · &nbsp;AV&nbsp; · &nbsp;AUTOMATION</small></span>
+        </a>
+        <p>Well considered systems.<br />Beautifully connected homes.</p>
+        <a class="footer-top" href="index.html#top">Back to home <span aria-hidden="true">↑</span></a>
+      </div>
+      <div class="shell footer-bottom"><span>© <span id="year"></span> EVERYTHINGAV</span><span>DESIGNED AROUND HOME.</span><span>LONDON, UK</span></div>
+    </footer>
+  </body>
+</html>
